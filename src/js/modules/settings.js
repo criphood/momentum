@@ -13,11 +13,11 @@ const time = document.querySelector('.time'),
 // Object with global settings
 let state;
 
-if (localStorage.getItem('state') != null) {
+if (localStorage.getItem('state')) {
     state = getState();
 } else {
     state = {
-        language: 'ru',
+        language: 'en',
         photoSource: 'github',
         blocks: ['time', 'date', 'greeting', 'quotes', 'weather', 'player', 'todo']
     };

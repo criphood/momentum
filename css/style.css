@@ -434,8 +434,8 @@ input[type=range]::-webkit-slider-thumb {
   transition: all .3s ease-in;
   width: 320px;
   position: fixed;
-  bottom: 30px;
-  right: 10px;
+  bottom: 50px;
+  right: 20px;
   min-height: 150px;
   background: #fff;
   border-radius: 5px;
@@ -744,6 +744,11 @@ h3 {
 @media (max-width: 480px) {
   .header, .container-audio {
     padding: 5px;
+  }
+
+  .container-todo {
+    bottom: 35px;
+    right: 10px;
   }
 
   .weather {
