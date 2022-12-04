@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="player hide">
+        <div class="container-audio">
+          <div class="song-name"></div>
+          <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <div class="bars">
+            <div class="song-time">
+              <div class="current-time"></div>
+              <p> / </p>
+              <div class="duration-time"></div>
+              <input type="range" id="progress-bar" min="0" step="0.1">
+            </div>
+            <div class="volume">
+              <div class="container__volume-bar">
+                <input type="range" id="volume-bar" min="0" max="100" value="100">
+              </div>
+              <button class="mute"></button>
+            </div>
+          </div>
+
+        </div>
+        <ul class="play-list"></ul>
+      </div>
+      <div class="weather hide">
+        <input type="text" class="city" />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <time class="time hide"></time>
+      <date class="date hide"></date>
+      <div class="greeting hide">
+        <span class="greeting-text"></span>
+        <input type="text" class="name" />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="settings">
+        <div class="settings-opener"></div>
+      </div>
+      <div class="quotes hide">
+        <button class="change-quote"></button>
+        <div>
+          <div class="quote"></div>
+          <div class="author"></div>
+        </div>
+      </div>
+      <div class="todo hide">
+        <button class="todo-opener"></button>
+      </div>
+    </footer>
+
+    <div class="container-todo">
+      <div class="todo-header">
+        <span class="todo-header-name"></span>
+        <button class="todo-closer"></button>
+      </div>
+      <ul class="todo-list">
+
+      </ul>
+      <input type="text" class="todo-add" placeholder="New Todo">
+    </div>
+
+    <div class="settings-modal close-settings">
+      <div class="container-settings">
+        <div class="container-source">
+          <h3 class="source-header"></h3>
+          <div class="button-wrapper">
+            <button class="source" data-source="github" id="github">
+              GitHub
+            </button>
+            <button class="source" data-source="unsplash" id="unsplash">
+              Unsplash API
+            </button>
+            <button class="source" data-source="flickr" id="flickr">
+              Flickr API
+            </button>
+            <input type="text" class="tag" placeholder="image tag...">
+          </div>
+        </div>
+        <div class="container-blocks">
+          <h3 class="blocks-header"></h3>
+          <div class="button-wrapper">
+            <button class="hide-weather"></button>
+            <button class="hide-time"></button>
+            <button class="hide-date"></button>
+            <button class="hide-greeting"></button>
+            <button class="hide-quotes"></button>
+            <button class="hide-player"></button>
+            <button class="hide-todo"></button>
+          </div>
+        </div>
+        <div class="container-lang">
+          <h3 class="lang-header"></h3>
+          <div class="button-wrapper">
+            <button class="lang-changer"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="bg">
+  </div>
+  <script src="./bundle.js"></script>
+</body>
+
+</html>
